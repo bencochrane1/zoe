@@ -1,6 +1,6 @@
 body {
 	/* set up a background image */
-	background: url('../images/melbourne.jpg') no-repeat;
+	background: url('../images/sydney.jpg') no-repeat;
 	/* the follow is the code to have the image display as a full page */
 	background-position: center;
 	background-attachment: fixed;
@@ -15,10 +15,14 @@ body {
 }
 
 .weather-icon {
-	font-size: 125px;
 	position: absolute;
 	margin: -50px 0 0 0;
   top: 50%;
+}
+
+.weather-icon img {
+  width: 110%;
+  height: auto;
 }
 
 .weather-description {
@@ -149,8 +153,9 @@ header a:hover, a:active {
   padding: 0 0 5px 7px;
 }
 
-.forecast-icon {
-	font-size: 50px;
+.forecast-icon img {
+	width: 55px;
+  height: auto;
 }
 
 #menu-icon {
@@ -198,10 +203,16 @@ header a:hover, a:active {
 #credits {
 	background-color: rgba(0, 0, 0, 0.4);
 	width: 350px;
-	padding: 0px 25px 25px 25px;
+	padding: 0px 25px 25px 35px;
 	margin-top: 100px;
 	float: right;
   display: none;
+  line-height: 1.4em;
+}
+
+#credits a {
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 #credits-header {
